@@ -1,7 +1,7 @@
 #!/bin/bash
-for i in {0..2}
+for i in 1 2 4
 do
-  dirname="EXPERIMENT-heldout-$i"
+  dirname="exp-$i"
   mkdir $dirname
   cp *.py $dirname
   cp *.sh $dirname
@@ -14,5 +14,5 @@ do
   mkdir ${dirname}/results
   mkdir ${dirname}/subcorpora
   mkdir ${dirname}/top_words
-  cp input_data/* ${dirname}/input_data
+  #cp input_data/* ${dirname}/input_data
 done
